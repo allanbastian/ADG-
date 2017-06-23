@@ -18,8 +18,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     LayoutInflater inflater;
     List<EventItem> data = Collections.emptyList();
 
-    public EventRecyclerAdapter(Context context, List<EventItem> data) {
-        inflater = LayoutInflater.from(context);
+    public EventRecyclerAdapter(List<EventItem> data) {
         this.data = data;
     }
 

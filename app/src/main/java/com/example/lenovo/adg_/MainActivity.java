@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.attendance: return true;
             case R.id.freeSlot: return true;
             case R.id.projects: return true;
-            case R.id.events: return true;
+            case R.id.events:   Intent EventIntent = new Intent(this, EventActivity.class);
+                                startActivity(EventIntent);
+                                return true;
             case R.id.meetings: return true;
             case R.id.work: Intent intent = new Intent(this, Work.class);
                             startActivity(intent);

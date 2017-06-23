@@ -20,6 +20,10 @@
             android:name=".Work"
             android:label="@string/title_work"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

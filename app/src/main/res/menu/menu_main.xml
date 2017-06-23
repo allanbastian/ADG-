@@ -12,13 +12,13 @@
 
     <item
         android:id="@+id/propic"
-        android:clickable="false"
+        android:clickable="true"
         android:title="Profile pic"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/username"
-        android:clickable="false"
+        android:clickable="true"
         android:title="username"
         app:showAsAction="never" />
 
