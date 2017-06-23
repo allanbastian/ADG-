@@ -1,10 +1,14 @@
 package com.example.lenovo.adg_;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 /**
@@ -51,4 +55,28 @@ public class Work extends AppCompatActivity {
     public TextView getVenue() { return Venue; }
 
     public void setVenue(TextView venue) { Venue = venue;}
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.attendance: return true;
+            case R.id.freeSlot: return true;
+            case R.id.projects: return true;
+            case R.id.events:   Intent EventIntent = new Intent(this, EventActivity.class);
+                                startActivity(EventIntent);
+                                return true;
+            case R.id.meetings: return true;
+            case R.id.work: Intent intent = new Intent(this, Work.class);
+                            startActivity(intent);
+                            return true;
+            default: return false;
+        }
+    }
 }
