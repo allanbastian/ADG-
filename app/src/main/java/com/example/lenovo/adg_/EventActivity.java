@@ -36,7 +36,7 @@ public class EventActivity extends AppCompatActivity {
         EventName = (TextView) findViewById(R.id.eventName);
         EventMonth = (TextView) findViewById(R.id.eventMonth);
         EventRecycler = (RecyclerView) findViewById(R.id.eventRecycler);
-        adapter = new EventRecyclerAdapter(getData());
+        adapter = new EventRecyclerAdapter(this, getData());
         EventRecycler.setAdapter(adapter);
         EventRecycler.setLayoutManager(new LinearLayoutManager(this));
     }

@@ -8,8 +8,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:id="@+id/eventNumber"
         android:text="Num."
+        android:textSize="25sp"
         android:paddingRight="30dp"
         android:paddingTop="5dp"/>
 

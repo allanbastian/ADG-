@@ -2,6 +2,7 @@ package com.example.lenovo.adg_;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,8 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     LayoutInflater inflater;
     List<EventItem> data = Collections.emptyList();
 
-    public EventRecyclerAdapter(List<EventItem> data) {
+    public EventRecyclerAdapter(Context context, List<EventItem> data) {
+        inflater = LayoutInflater.from(context);
         this.data = data;
     }
 
