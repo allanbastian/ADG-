@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">ADG-</string>
+    <string name="app_name">ADG-Internal</string>
+    <string name="title_work">WorkActivity</string>
 </resources>
