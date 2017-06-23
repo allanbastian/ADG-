@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/logo"
+        android:clickable="false"
+        android:title="Logo"
+        app:showAsAction="never"/>
+    <!--android:icon=""-->
+
+    <item
+        android:id="@+id/propic"
+        android:clickable="false"
+        android:title="Profile pic"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/username"
+        android:clickable="false"
+        android:title="username"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/attendance"
+        android:clickable="true"
+        android:title="Attendance"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/freeSlot"
+        android:clickable="true"
+        android:title="Free Slots"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/projects"
+        android:title="Projects"
+        android:clickable="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/events"
+        android:clickable="true"
+        android:title="Events"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/meetings"
+        android:clickable="true"
+        android:title="Meetings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/work"
+        android:clickable="true"
+        android:title="Work"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:clickable="true"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+</menu>
