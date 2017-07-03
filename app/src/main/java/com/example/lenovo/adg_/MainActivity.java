@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case R.id.attendance: return true;
-            case R.id.freeSlot: return true;
+            case R.id.freeSlot: Intent FreeSlotsIntent = new Intent(this, FreeSlotsActivity.class);
+                                startActivity(FreeSlotsIntent);
+                                return true;
             case R.id.projects: return true;
             case R.id.events:   Intent EventIntent = new Intent(this, EventActivity.class);
                                 startActivity(EventIntent);
